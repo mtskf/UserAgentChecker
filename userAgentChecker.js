@@ -1,5 +1,7 @@
 // User Agent Checker
+// v0.1.0
 // -----------------------------------------------------------
+
 +(function () {
   _uac = {}; // define _uac as a global object
   var ua = window.navigator.userAgent.toLowerCase();
