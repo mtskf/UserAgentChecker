@@ -25,7 +25,7 @@ Result Example (The result of the detection will be automatically added to the c
 To use the detection result in your own js code, you can access via the global variable `_uac`.
 
     <script>
-      console.log(_uac.browser)       // returns browser name - ie. chrome, safari, ie10, edge, iemobile, etc.
+      console.log(_uac.browser);       // returns browser name - ie. chrome, safari, ie10, edge, iemobile, etc.
       console.log(_uac.device);       // returns device name  - ie. iphone, ipad, android, windows_phone
       console.log(_uac.isiOS);        // returns if it's ios (boolean)
       console.log(_uac.isMobile);     // returns if it's a mobile device (boolean)
