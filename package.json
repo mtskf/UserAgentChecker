@@ -1,0 +1,26 @@
+{
+  "name": "uachecker",
+  "version": "1.0.0",
+  "description": "Browser and device detection library for websites",
+  "main": "userAgentChecker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "./node_modules/uglify-js/bin/uglifyjs userAgentChecker.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtskf/UserAgentChecker.git"
+  },
+  "keywords": [
+    "ua",
+    "useragent",
+    "browser",
+    "detection"
+  ],
+  "author": "Mitsuki Fukunaga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mtskf/UserAgentChecker/issues"
+  },
+  "homepage": "https://github.com/mtskf/UserAgentChecker#readme",
+}
