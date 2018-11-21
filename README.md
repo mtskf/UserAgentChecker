@@ -32,6 +32,7 @@ To use the detection result in your own js code, you can access via the global v
       console.log(_uac.isTablet);     // returns if it's a tablet device (boolean)
       console.log(_uac.isTouch);      // returns if it's a touch device (boolean)
       console.log(_uac.isModern);     // returns if it's a modern browser (boolean)
+      console.log(_uac.isScrollBar);  // returns if it has scrollbar (number)
     </script>
 
 
