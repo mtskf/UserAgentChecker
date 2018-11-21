@@ -23,4 +23,7 @@
     "url": "https://github.com/mtskf/UserAgentChecker/issues"
   },
   "homepage": "https://github.com/mtskf/UserAgentChecker#readme",
+  "devDependencies": {
+    "uglify-js": "^3.4.9"
+  }
 }
