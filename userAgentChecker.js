@@ -45,7 +45,7 @@
 			}
 			else return 0;
 	})();
-  _uac.isIE = (_uac.browser.substr(0, 2) === 'ie' && _uac.browser !== 'iemobile');
+	_uac.isIE = (_uac.browser.substr(0, 2) === 'ie' && _uac.browser !== 'iemobile');
 	_uac.isiOS = (_uac.device === 'iphone' || _uac.device === 'ipad');
 	_uac.isMobile = (ua.indexOf('mobi') !== -1 || _uac.device === 'iphone' || (_uac.device === 'windows_phone' && ua.indexOf('wpdesktop') === -1) || _uac.device === 'iemobile');
 	_uac.isTablet = (_uac.device === 'ipad' || (_uac.device === 'android' && !_uac.isMobile));
@@ -59,14 +59,14 @@
 		classStr += (_uac.device  !== '') ? _uac.device + " "  : 'device-unknown ',
 		classStr += (_uac.isMobile) ? 'mobile ' : 'desktop ',
 		classStr += (_uac.isTouch) ? 'touch '  : 'mouse ',
-    classStr += (_uac.isiOS) ? 'ios ' : '',
-    classStr += (_uac.isIE) ? 'ie ' : '',
+		classStr += (_uac.isiOS) ? 'ios ' : '',
+		classStr += (_uac.isIE) ? 'ie ' : '',
 		classStr += (_uac.isModern) ? 'modern ' : 'old ';
-    return classStr;
+		return classStr;
 	};
 
-  document.addEventListener('DOMContentLoaded', function() {
-    document.documentElement.className += homeClass();
-  });
+	document.addEventListener('DOMContentLoaded', function() {
+		document.documentElement.className += homeClass();
+	});
 
 })();
