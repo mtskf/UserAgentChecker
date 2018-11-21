@@ -52,6 +52,11 @@
 	_uac.isTouch  = ('ontouchstart' in window);
 	_uac.isModern = !(_uac.browser === 'ie6' || _uac.browser === 'ie7' || _uac.browser === 'ie8' || _uac.browser === 'ie9' || (0 < _uac.iosVer && _uac.iosVer < 8));
 
+	// check scrollbar
+	_uac.isScrollBar = (function(){
+		return window.innerWidth - document.documentElement.clientWidth
+	})();
+
 	// Set the results as class names of the html
 	var homeClass = function() {
 		var classStr = ' ';
@@ -61,7 +66,8 @@
 		classStr += (_uac.isTouch) ? 'touch '  : 'mouse ',
 		classStr += (_uac.isiOS) ? 'ios ' : '',
 		classStr += (_uac.isIE) ? 'ie ' : '',
-		classStr += (_uac.isModern) ? 'modern ' : 'old ';
+		classStr += (_uac.isModern) ? 'modern ' : 'old ',
+		classStr += (_uac.isScrollBar) ? 'scrollBar scrollBarWidth_' + _uac.isScrollBar + ' ' : 'scrollBarWidth_0 ';
 		return classStr;
 	};
 
