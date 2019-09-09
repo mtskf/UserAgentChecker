@@ -43,6 +43,7 @@ To use the detection result in your own js code, you can access via the global v
 
 ### 1.1.0 (2019-09-10)
 * Applied Parcel bundler to compile
+* Applied ES6
 
 
 ## Copyright Information
