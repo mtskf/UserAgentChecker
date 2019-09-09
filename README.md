@@ -13,9 +13,9 @@ It also automatically adds the result of the detection as class names of `<html>
 
 ## Usage
 
-Import `userAgentChecker.js` or `userAgentChecker.min.js` in your HTML.
+Import `userAgentChecker.js` in your HTML.
 
-    <script type="text/javascript" src="/path/to/userAgentChecker.min.js"></script>
+    <script type="text/javascript" src="/path/to/userAgentChecker.js"></script>
 
 Result Example (The result of the detection will be automatically added to the class property of `<html>`):
 
@@ -39,6 +39,9 @@ To use the detection result in your own js code, you can access via the global v
 
 ### 0.1.0 (2017-02-26)
 * Initial Release
+
+### 1.1.0 (2019-09-10)
+* Applied Parcel bundler to compile
 
 
 ## Copyright Information
